@@ -37,7 +37,12 @@ class  List extends React.Component {
             else { 
             
         return ( 
-       
+            <div className="card">
+                <div className="card-header">
+                <Link className="btn btn-success" to={"/create"}>Add new user</Link> 
+                </div>
+                <div className="card-body">
+                    <h4> List of users </h4>
        <table className="table">
        <thead>
            <tr>
@@ -68,7 +73,15 @@ class  List extends React.Component {
         
          
        </tbody>
-   </table> );
+   </table> 
+
+                </div>
+                <div class="card-footer text-muted">
+                    
+                </div>
+            </div>
+       
+);
 
             }
 
